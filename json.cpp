@@ -39,7 +39,7 @@ extern "C" {
 
 
 int json_tojson(lua_State* vm) {
-    luaL_checkany(vm, 1); // one arg
+    luaL_checktype(vm, 1, LUA_TTABLE); // one arg, a table
 
     do {
         std::string err;
