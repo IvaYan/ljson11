@@ -1,6 +1,8 @@
 Thin wrapper around Dropbox' json11 library that enables Lua to
 serialize/deserialize data to/from JSON.
 
+Read [this article](https://medium.com/@243cd1d8/json11-bindings-for-lua-behind-the-scenes-1f36c19da9cb) to know more about internals.
+
 ## Compiling
 
 Use a build system of your choice. Just create
