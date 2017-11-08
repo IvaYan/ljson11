@@ -23,6 +23,10 @@ json11::Json json_tojson(lua_State* vm, int idx, std::string& err);
 void json_arr_to_obj(json11::Json::array& from, json11::Json::object& to);
 
 extern "C" {
+
+#ifdef _MSC_VER
+    _declspec(dllexport)
+#endif
     /// Module entry point that is called by Lua when it loads the module.
     int luaopen_json(lua_State* vm) {
 
