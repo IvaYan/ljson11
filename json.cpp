@@ -2,7 +2,7 @@
  * JSON module interface.
 */
 
-#include <lua/lua.hpp>
+#include <local-lua/lua.hpp>
 #include <string>
 #include <cassert>
 #include "json11/json11.hpp"
